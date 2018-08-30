@@ -2,7 +2,7 @@
 
 
 
-----1. Open Angular1 folder and do -> npm install express.
+----1. Open Angular1 folder, delete package-lock.json(if its there), then do -> npm install express.
 
 ----2. Go to /scripts and do -> node web-server.AngulatrJS.
 
