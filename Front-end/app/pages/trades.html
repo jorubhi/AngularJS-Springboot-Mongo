@@ -1,0 +1,37 @@
+<div class="container">
+    <h2>Commodities </h2>
+    <div>
+        <form ng-submit="add()">
+            <input type="text" ng-model="input" class="form-group " placeholder="Add a new commodity">
+            <button>Add</button>
+        </form>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>S.no.</th>
+                <th>Name</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <input type="text" ng-model="tradeName" placeholder="Search..." />
+            <tr ng-repeat="item in trades | filter:tradeName">
+
+
+                <td>{{$index+1}}</td>
+                <td> {{item.cn}} </td>
+                <td>
+                    <button ng-click="remove($index)" class="glyphicon glyphicon-trash">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                </td>
+
+            </tr>
+
+
+            </li>
+            </ul>
+
+
+</div>

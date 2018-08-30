@@ -1,0 +1,31 @@
+<div class="us" >
+
+    
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <h2>List of people </h2>
+            <tbody>
+                <input type="text" ng-model="firstName" placeholder="Search..." />
+                <tr ng-repeat="user in users | filter:firstName ">
+
+                    <td>{{user.name}} &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</td>
+                    <td>{{user.email}} &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</td>
+                    <td>{{user.address}}</td>&nbsp; &nbsp;&nbsp;&nbsp;
+                    <td>
+                        <button ng-click="remove2($index,user.id)" class=" ">
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
