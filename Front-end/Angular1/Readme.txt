@@ -4,7 +4,7 @@
 
 ----1. Open Angular1 folder, delete package-lock.json(if its there), then do -> npm install express.
 
-----2. Go to /scripts and do -> node web-server.AngulatrJS.
+----2. Go to /scripts and do -> node web-server.js
 
 ----3. You can now access the application @locahost:8100.
 
